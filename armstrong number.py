@@ -1,15 +1,14 @@
-# a=int(input("enter the number"))
-# n=a
-# sum=0
-# while a>0:
-#     j=a%10
-#     sum=sum+j**3
-#     a=a//10
-# if sum==n:
-#     print(n,"its armstrong number")
-# else:
-#     print(n,"its not armstrong number")
+from ast import Num
 
 
-
-
+num=int(input("enter the number"))
+b=num
+c=str(num)
+n=len(c)
+sum=0
+for i in c:
+    sum=sum+int(i)**n
+if sum==b:
+    print("armstrong number")
+else:
+    print("not a armstrong number")
